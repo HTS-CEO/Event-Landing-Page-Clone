@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Event 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+line-height: 1.6;
+color: #333;
+overflow-x: hidden;
+}
+
+h1, h2, h3 {
+font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(255, 255, 255, 0.98);
+box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+z-index: 1000;
+padding: 1.2rem 6%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all 0.4s ease;
+backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+padding: 0.8rem 6%;
+background: rgba(255, 255, 255, 1);
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+display: flex;
+align-items: center;
+gap: 0.7rem;
+}
+
+.logo i {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 2rem;
+}
+
+.nav-links {
+display: flex;
+gap: 2.5rem;
+list-style: none;
+align-items: center;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #2c3e50;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+transition: all 0.3s ease;
+position: relative;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+width: 100%;
+}
+
+.nav-links a:hover {
+color: #667eea;
+}
+
+.menu-toggle {
+display: none;
+font-size: 1.8rem;
+cursor: pointer;
+color: #2c3e50;
+transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+transform: rotate(90deg);
+}
+
+.hero {
+margin-top: 70px;
+min-height: 95vh;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+padding: 3rem 6%;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600') center/cover;
+opacity: 0.12;
+animation: zoomIn 25s ease infinite alternate;
+}
+
+.hero::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: radial-gradient(circle at 30% 50%, rgba(118, 75, 162, 0.3) 0%, transparent 50%);
+}
+
+@keyframes zoomIn {
+from { transform: scale(1); }
+to { transform: scale(1.15); }
+}
+
+.hero-content {
+position: relative;
+z-index: 1;
+max-width: 900px;
+animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(40px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.hero-badge {
+display: inline-block;
+background: rgba(255,255,255,0.2);
+padding: 0.6rem 1.5rem;
+border-radius: 50px;
+font-size: 0.9rem;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 1.5rem;
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.3);
+animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.hero h1 {
+font-size: 4rem;
+margin-bottom: 1.5rem;
+font-weight: 900;
+letter-spacing: -1px;
+animation: fadeInUp 1s ease 0.3s backwards;
+text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.hero p {
+font-size: 1.4rem;
+margin-bottom: 2.5rem;
+font-weight: 300;
+animation: fadeInUp 1s ease 0.4s backwards;
+opacity: 0.95;
+line-height: 1.8;
+}
+
+.event-meta {
+display: flex;
+justify-content: center;
+gap: 3rem;
+flex-wrap: wrap;
+margin-bottom: 3rem;
+animation: fadeInUp 1s ease 0.6s backwards;
+}
+
+.meta-item {
+display: flex;
+align-items: center;
+gap: 0.7rem;
+font-size: 1.1rem;
+font-family: 'Poppins', sans-serif;
+background: rgba(255,255,255,0.15);
+padding: 0.8rem 1.5rem;
+border-radius: 50px;
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.2);
+}
+
+.meta-item i {
+font-size: 1.3rem;
+}
+
+.btn {
+display: inline-block;
+padding: 1.2rem 3rem;
+background: white;
+color: #667eea;
+text-decoration: none;
+border-radius: 50px;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+transition: all 0.4s ease;
+border: none;
+cursor: pointer;
+font-size: 1.05rem;
+animation: fadeInUp 1s ease 0.8s backwards;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+background: #f8f9ff;
+}
+
+.btn-secondary {
+background: transparent;
+border: 2px solid white;
+color: white;
+margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+background: white;
+color: #667eea;
+}
+
+.section {
+padding: 6rem 6%;
+animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+.section-title {
+text-align: center;
+font-size: 3rem;
+margin-bottom: 1rem;
+color: #2c3e50;
+position: relative;
+font-weight: 700;
+}
+
+.section-subtitle {
+text-align: center;
+font-size: 1.2rem;
+color: #666;
+margin-bottom: 4rem;
+font-weight: 300;
+font-family: 'Inter', sans-serif;
+}
+
+.section-title::after {
+content: '';
+display: block;
+width: 100px;
+height: 5px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+margin: 1.5rem auto;
+border-radius: 3px;
+}
+
+.event-details {
+background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.details-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 2.5rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.detail-card {
+background: white;
+padding: 3rem;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+transition: all 0.4s ease;
+border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.detail-card:hover {
+transform: translateY(-15px);
+box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+border-color: rgba(102, 126, 234, 0.3);
+}
+
+.detail-card i {
+font-size: 3.5rem;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 1.5rem;
+display: inline-block;
+}
+
+.detail-card h3 {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+color: #2c3e50;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+}
+
+.detail-card p {
+color: #666;
+line-height: 1.9;
+font-size: 1.05rem;
+}
+
+.agenda-section {
+background: white;
+}
+
+.timeline {
+max-width: 1000px;
+margin: 0 auto;
+position: relative;
+}
+
+.timeline::before {
+content: '';
+position: absolute;
+left: 50%;
+top: 0;
+bottom: 0;
+width: 3px;
+background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+transform: translateX(-50%);
+}
+
+.timeline-item {
+display: flex;
+margin-bottom: 3rem;
+position: relative;
+animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+from {
+opacity: 0;
+transform: translateX(-30px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.timeline-item:nth-child(even) {
+flex-direction: row-reverse;
+}
+
+.timeline-content {
+width: 45%;
+background: #f8f9ff;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+transform: scale(1.03);
+box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+}
+
+.timeline-time {
+font-size: 1.1rem;
+color: #667eea;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 0.5rem;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.timeline-title {
+font-size: 1.4rem;
+margin-bottom: 0.5rem;
+color: #2c3e50;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+}
+
+.timeline-desc {
+color: #666;
+line-height: 1.7;
+}
+
+.timeline-icon {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 50px;
+height: 50px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 1.2rem;
+box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+z-index: 1;
+}
+
+.speakers-section {
+background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.speakers-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 3rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.speaker-card {
+background: white;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+transition: all 0.4s ease;
+}
+
+.speaker-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+}
+
+.speaker-img {
+width: 100%;
+height: 300px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+position: relative;
+overflow: hidden;
+}
+
+.speaker-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.speaker-card:hover .speaker-img img {
+transform: scale(1.1);
+}
+
+.speaker-info {
+padding: 2rem;
+text-align: center;
+}
+
+.speaker-name {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+color: #2c3e50;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+}
+
+.speaker-role {
+color: #667eea;
+font-weight: 500;
+margin-bottom: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.speaker-bio {
+color: #666;
+line-height: 1.7;
+margin-bottom: 1rem;
+font-size: 0.95rem;
+}
+
+.speaker-social {
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+.speaker-social a {
+width: 35px;
+height: 35px;
+background: #f8f9ff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #667eea;
+transition: all 0.3s ease;
+}
+
+.speaker-social a:hover {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+transform: translateY(-3px);
+}
+
+.testimonials-section {
+background: white;
+}
+
+.testimonials-slider {
+max-width: 900px;
+margin: 0 auto;
+position: relative;
+}
+
+.testimonial-card {
+background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+padding: 3rem;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+.testimonial-quote {
+font-size: 1.3rem;
+color: #2c3e50;
+line-height: 1.9;
+margin-bottom: 2rem;
+font-style: italic;
+font-family: 'Playfair Display', serif;
+}
+
+.testimonial-author {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+
+.testimonial-avatar {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+overflow: hidden;
+}
+
+.testimonial-avatar img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.testimonial-info h4 {
+font-size: 1.2rem;
+color: #2c3e50;
+margin-bottom: 0.3rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-info p {
+color: #667eea;
+font-size: 0.95rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-stars {
+color: #ffc107;
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+}
+
+.pricing-section {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+}
+
+.pricing-section .section-title,
+.pricing-section .section-subtitle {
+color: white;
+}
+
+.pricing-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2.5rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.pricing-card {
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.2);
+border-radius: 20px;
+padding: 3rem;
+text-align: center;
+transition: all 0.4s ease;
+}
+
+.pricing-card:hover {
+transform: translateY(-10px);
+background: rgba(255,255,255,0.15);
+border-color: rgba(255,255,255,0.4);
+}
+
+.pricing-card.featured {
+background: white;
+color: #2c3e50;
+transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+transform: scale(1.08);
+}
+
+.pricing-name {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+}
+
+.pricing-price {
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.pricing-price span {
+font-size: 1.2rem;
+font-weight: 400;
+}
+
+.pricing-features {
+list-style: none;
+margin-bottom: 2rem;
+}
+
+.pricing-features li {
+padding: 0.7rem 0;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.pricing-card.featured .pricing-features li {
+border-bottom-color: rgba(0,0,0,0.1);
+}
+
+.pricing-features i {
+margin-right: 0.5rem;
+color: #4ade80;
+}
+
+.faq-section {
+background: #f8f9ff;
+}
+
+.faq-container {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.faq-item {
+background: white;
+margin-bottom: 1.5rem;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+}
+
+.faq-question {
+padding: 1.8rem;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+color: #2c3e50;
+font-size: 1.15rem;
+transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+color: #667eea;
+}
+
+.faq-question i {
+transition: transform 0.3s ease;
+color: #667eea;
+}
+
+.faq-item.active .faq-question i {
+transform: rotate(180deg);
+}
+
+.faq-answer {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease, padding 0.4s ease;
+padding: 0 1.8rem;
+color: #666;
+line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+max-height: 500px;
+padding: 0 1.8rem 1.8rem;
+}
+
+.rsvp-section {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+}
+
+.rsvp-section .section-title,
+.rsvp-section .section-subtitle {
+color: white;
+}
+
+.rsvp-form {
+max-width: 700px;
+margin: 0 auto;
+background: rgba(255,255,255,0.1);
+padding: 3.5rem;
+border-radius: 25px;
+backdrop-filter: blur(15px);
+border: 2px solid rgba(255,255,255,0.2);
+box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.form-row {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.form-group {
+text-align: left;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.7rem;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+width: 100%;
+padding: 1.2rem;
+border: 2px solid rgba(255,255,255,0.3);
+border-radius: 12px;
+font-size: 1rem;
+font-family: 'Inter', sans-serif;
+transition: all 0.3s ease;
+background: rgba(255,255,255,0.95);
+color: #2c3e50;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+outline: none;
+border-color: white;
+box-shadow: 0 0 0 4px rgba(255,255,255,0.2);
+background: white;
+}
+
+.sponsors {
+background: white;
+}
+
+.sponsors-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 3rem;
+max-width: 1400px;
+margin: 0 auto;
+align-items: center;
+}
+
+.sponsor-card {
+text-align: center;
+padding: 2.5rem;
+transition: all 0.4s ease;
+background: #f8f9ff;
+border-radius: 15px;
+}
+
+.sponsor-card:hover {
+transform: scale(1.08);
+background: white;
+box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+}
+
+.sponsor-card img {
+max-width: 180px;
+height: auto;
+filter: grayscale(100%) opacity(0.7);
+transition: filter 0.4s ease;
+}
+
+.sponsor-card:hover img {
+filter: grayscale(0%) opacity(1);
+}
+
+.location-section {
+background: #f8f9ff;
+}
+
+.location-content {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: center;
+}
+
+.location-info {
+}
+
+.location-info h3 {
+font-size: 2rem;
+margin-bottom: 1.5rem;
+color: #2c3e50;
+font-family: 'Poppins', sans-serif;
+}
+
+.location-details {
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+.location-item {
+display: flex;
+align-items: flex-start;
+gap: 1rem;
+}
+
+.location-item i {
+font-size: 1.5rem;
+color: #667eea;
+margin-top: 0.3rem;
+}
+
+.location-item-content h4 {
+font-size: 1.2rem;
+margin-bottom: 0.3rem;
+color: #2c3e50;
+font-family: 'Poppins', sans-serif;
+}
+
+.location-item-content p {
+color: #666;
+line-height: 1.7;
+}
+
+.location-map {
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+height: 400px;
+background: #e0e0e0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.location-map iframe {
+width: 100%;
+height: 100%;
+border: none;
+}
+
+.newsletter-section {
+background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+color: white;
+padding: 4rem 6%;
+}
+
+.newsletter-content {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.newsletter-content h3 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.newsletter-content p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+opacity: 0.9;
+}
+
+.newsletter-form {
+display: flex;
+gap: 1rem;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.newsletter-form input {
+flex: 1;
+padding: 1.2rem;
+border: 2px solid rgba(255,255,255,0.2);
+border-radius: 12px;
+font-size: 1rem;
+background: rgba(255,255,255,0.1);
+color: white;
+font-family: 'Inter', sans-serif;
+}
+
+.newsletter-form input::placeholder {
+color: rgba(255,255,255,0.6);
+}
+
+.newsletter-form input:focus {
+outline: none;
+border-color: white;
+background: rgba(255,255,255,0.15);
+}
+
+.newsletter-form button {
+padding: 1.2rem 2.5rem;
+}
+
+.quiz-section {
+background: white;
+}
+
+.quiz-container {
+max-width: 900px;
+margin: 0 auto;
+background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+padding: 3.5rem;
+border-radius: 25px;
+box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+border: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.quiz-question {
+display: none;
+animation: fadeIn 0.5s ease;
+}
+
+.quiz-question.active {
+display: block;
+}
+
+.quiz-question h3 {
+font-size: 1.8rem;
+margin-bottom: 0.8rem;
+color: #2c3e50;
+font-family: 'Poppins', sans-serif;
+}
+
+.quiz-question-desc {
+color: #666;
+margin-bottom: 2rem;
+font-size: 1.05rem;
+}
+
+.quiz-options {
+display: grid;
+gap: 1.2rem;
+}
+
+.quiz-option {
+padding: 1.8rem;
+border: 2px solid #e8ecf5;
+border-radius: 15px;
+cursor: pointer;
+transition: all 0.3s ease;
+display: flex;
+align-items: center;
+gap: 1.2rem;
+background: white;
+}
+
+.quiz-option:hover {
+border-color: #667eea;
+background: #f8f9ff;
+transform: translateX(5px);
+}
+
+.quiz-option input[type="radio"] {
+width: 22px;
+height: 22px;
+cursor: pointer;
+accent-color: #667eea;
+}
+
+.quiz-option-content {
+flex: 1;
+}
+
+.quiz-option-title {
+font-weight: 600;
+color: #2c3e50;
+margin-bottom: 0.3rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.quiz-option-desc {
+color: #666;
+font-size: 0.9rem;
+}
+
+.quiz-navigation {
+display: flex;
+justify-content: space-between;
+margin-top: 2.5rem;
+gap: 1rem;
+}
+
+.progress-bar {
+width: 100%;
+height: 10px;
+background: #e8ecf5;
+border-radius: 10px;
+margin-bottom: 2.5rem;
+overflow: hidden;
+}
+
+.progress-fill {
+height: 100%;
+background: linear-gradient(90deg, #667eea, #764ba2);
+width: 0%;
+transition: width 0.4s ease;
+border-radius: 10px;
+}
+
+.progress-text {
+text-align: center;
+margin-bottom: 1.5rem;
+font-weight: 500;
+color: #667eea;
+font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+background: #1a1a2e;
+color: white;
+padding: 4rem 6% 2rem;
+}
+
+.footer-content {
+max-width: 1400px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 3rem;
+margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+font-size: 1.5rem;
+margin-bottom: 1.5rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.footer-section p,
+.footer-section a {
+color: rgba(255,255,255,0.7);
+text-decoration: none;
+line-height: 2;
+transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+color: #667eea;
+}
+
+.footer-links-list {
+list-style: none;
+}
+
+.footer-links-list li {
+margin-bottom: 0.8rem;
+}
+
+.footer-social {
+display: flex;
+gap: 1rem;
+margin-top: 1rem;
+}
+
+.footer-social a {
+width: 45px;
+height: 45px;
+background: rgba(255,255,255,0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+transition: all 0.3s ease;
+font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+transform: translateY(-5px);
+}
+
+.footer-bottom {
+border-top: 1px solid rgba(255,255,255,0.1);
+padding-top: 2rem;
+text-align: center;
+color: rgba(255,255,255,0.6);
+}
+
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.85);
+z-index: 2000;
+align-items: center;
+justify-content: center;
+animation: fadeIn 0.3s ease;
+padding: 1rem;
+}
+
+.modal.active {
+display: flex;
+}
+
+.modal-content {
+background: white;
+padding: 3.5rem;
+border-radius: 25px;
+max-width: 550px;
+width: 100%;
+position: relative;
+animation: slideUp 0.4s ease;
+box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+}
+
+@keyframes slideUp {
+from {
+opacity: 0;
+transform: translateY(50px) scale(0.9);
+}
+to {
+opacity: 1;
+transform: translateY(0) scale(1);
+}
+}
+
+.modal-close {
+position: absolute;
+top: 1.5rem;
+right: 1.5rem;
+font-size: 2rem;
+cursor: pointer;
+color: #999;
+transition: all 0.3s ease;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+
+.modal-close:hover {
+color: #667eea;
+background: #f8f9ff;
+transform: rotate(90deg);
+}
+
+.success-icon {
+font-size: 5rem;
+text-align: center;
+margin-bottom: 1.5rem;
+animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+from {
+transform: scale(0);
+}
+to {
+transform: scale(1);
+}
+}
+
+.success-icon i {
+background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.modal-content h2 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #2c3e50;
+font-family: 'Poppins', sans-serif;
+}
+
+.modal-content p {
+text-align: center;
+color: #666;
+line-height: 1.8;
+margin-bottom: 2rem;
+}
+
+.countdown-section {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+padding: 4rem 6%;
+text-align: center;
+}
+
+.countdown-title {
+font-size: 2.5rem;
+margin-bottom: 3rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.countdown-timer {
+display: flex;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+.countdown-item {
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.2);
+border-radius: 15px;
+padding: 2rem;
+min-width: 120px;
+}
+
+.countdown-number {
+font-size: 3.5rem;
+font-weight: 700;
+display: block;
+font-family: 'Poppins', sans-serif;
+}
+
+.countdown-label {
+font-size: 1.1rem;
+opacity: 0.9;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 500;
+}
+
+.cta-floating {
+position: fixed;
+bottom: 30px;
+right: 30px;
+z-index: 999;
+animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-15px); }
+}
+
+.cta-floating .btn {
+box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+display: flex;
+align-items: center;
+gap: 0.8rem;
+font-size: 1.1rem;
+}
+
+.stats-section {
+background: #2c3e50;
+color: white;
+padding: 4rem 6%;
+}
+
+.stats-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 3rem;
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
+}
+
+.stat-item {
+}
+
+.stat-number {
+font-size: 3.5rem;
+font-weight: 700;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+display: block;
+margin-bottom: 0.5rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.stat-label {
+font-size: 1.2rem;
+opacity: 0.9;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1024px) {
+.timeline::before {
+left: 30px;
+}
+
+.timeline-item {
+flex-direction: column !important;
+padding-left: 80px;
+}
+
+.timeline-content {
+width: 100%;
+}
+
+.timeline-icon {
+left: 30px;
+}
+
+.location-content {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 768px) {
+.navbar {
+padding: 1rem 4%;
+}
+
+.nav-links {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background: white;
+flex-direction: column;
+padding: 1.5rem;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+border-radius: 0 0 20px 20px;
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+}
+
+.hero {
+padding: 2rem 4%;
+min-height: 85vh;
+}
+
+.hero h1 {
+font-size: 2.5rem;
+}
+
+.hero p {
+font-size: 1.1rem;
+}
+
+.event-meta {
+flex-direction: column;
+gap: 1rem;
+}
+
+.section {
+padding: 4rem 4%;
+}
+
+.section-title {
+font-size: 2.2rem;
+}
+
+.section-subtitle {
+font-size: 1.05rem;
+}
+
+.rsvp-form,
+.quiz-container {
+padding: 2rem;
+}
+
+.form-row {
+grid-template-columns: 1fr;
+}
+
+.btn-secondary {
+margin-left: 0;
+margin-top: 1rem;
+}
+
+.newsletter-form {
+flex-direction: column;
+}
+
+.quiz-navigation {
+flex-direction: column;
+}
+
+.footer-content {
+grid-template-columns: 1fr;
+text-align: center;
+}
+
+.footer-social {
+justify-content: center;
+}
+
+.cta-floating {
+bottom: 20px;
+right: 20px;
+}
+
+.cta-floating .btn {
+font-size: 0.95rem;
+padding: 1rem 2rem;
+}
+
+.countdown-number {
+font-size: 2.5rem;
+}
+
+.countdown-item {
+padding: 1.5rem;
+min-width: 100px;
+}
+
+.stats-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+}
+
+.stat-number {
+font-size: 2.5rem;
+}
+
+.pricing-grid {
+grid-template-columns: 1fr;
+}
+
+.pricing-card.featured {
+transform: scale(1);
+}
+
+.speakers-grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 480px) {
+.navbar {
+padding: 1rem 3%;
+}
+
+.logo {
+font-size: 1.3rem;
+}
+
+.logo i {
+font-size: 1.5rem;
+}
+
+.hero h1 {
+font-size: 1.8rem;
+}
+
+.hero p {
+font-size: 1rem;
+}
+
+.section {
+padding: 3rem 4%;
+}
+
+.section-title {
+font-size: 1.8rem;
+}
+
+.details-grid,
+.sponsors-grid {
+grid-template-columns: 1fr;
+}
+
+.detail-card,
+.sponsor-card {
+padding: 2rem;
+}
+
+.modal-content {
+padding: 2rem;
+}
+
+.countdown-timer {
+gap: 1rem;
+}
+
+.countdown-item {
+min-width: 80px;
+padding: 1rem;
+}
+
+.countdown-number {
+font-size: 2rem;
+}
+
+.countdown-label {
+font-size: 0.85rem;
+}
+
+.stats-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+<div class="logo">
+<i class="fa-solid fa-rocket"></i>
+<span>EventPro 2025</span>
+</div>
+<div class="menu-toggle" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" onclick="closeMenu()">Home</a></li>
+<li><a href="#details" onclick="closeMenu()">Details</a></li>
+<li><a href="#agenda" onclick="closeMenu()">Agenda</a></li>
+<li><a href="#speakers" onclick="closeMenu()">Speakers</a></li>
+<li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
+<li><a href="#rsvp" onclick="closeMenu()">RSVP</a></li>
+<li><a href="#apply" onclick="closeMenu()">Apply</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="hero-badge">
+<i class="fa-solid fa-calendar-days"></i> March 15-17, 2025
+</div>
+<h1>Transform Your Future at the Premier Industry Summit</h1>
+<p>Join 500+ visionary leaders, innovators, and change-makers for three days of groundbreaking insights, meaningful connections, and career-defining opportunities</p>
+<div class="event-meta">
+<div class="meta-item">
+<i class="fa-solid fa-location-dot"></i>
+<span>Grand Convention Center, NYC</span>
+</div>
+<div class="meta-item">
+<i class="fa-solid fa-users-line"></i>
+<span>500+ Industry Leaders</span>
+</div>
+<div class="meta-item">
+<i class="fa-solid fa-trophy"></i>
+<span>50+ Expert Speakers</span>
+</div>
+</div>
+<div>
+<a href="#rsvp" class="btn"><i class="fa-solid fa-ticket"></i> Secure Your Spot</a>
+<a href="#details" class="btn btn-secondary"><i class="fa-solid fa-circle-info"></i> Learn More</a>
+</div>
+</div>
+</section>
+
+<section class="countdown-section">
+<h2 class="countdown-title"><i class="fa-regular fa-clock"></i> Event Starts In</h2>
+<div class="countdown-timer" id="countdown">
+<div class="countdown-item">
+<span class="countdown-number" id="days">00</span>
+<span class="countdown-label">Days</span>
+</div>
+<div class="countdown-item">
+<span class="countdown-number" id="hours">00</span>
+<span class="countdown-label">Hours</span>
+</div>
+<div class="countdown-item">
+<span class="countdown-number" id="minutes">00</span>
+<span class="countdown-label">Minutes</span>
+</div>
+<div class="countdown-item">
+<span class="countdown-number" id="seconds">00</span>
+<span class="countdown-label">Seconds</span>
+</div>
+</div>
+</section>
+
+<section class="stats-section">
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number"><i class="fa-solid fa-users"></i> 500+</span>
+<span class="stat-label">Attendees Expected</span>
+</div>
+<div class="stat-item">
+<span class="stat-number"><i class="fa-solid fa-microphone"></i> 50+</span>
+<span class="stat-label">Expert Speakers</span>
+</div>
+<div class="stat-item">
+<span class="stat-number"><i class="fa-solid fa-chalkboard-user"></i> 30+</span>
+<span class="stat-label">Interactive Workshops</span>
+</div>
+<div class="stat-item">
+<span class="stat-number"><i class="fa-solid fa-building"></i> 20+</span>
+<span class="stat-label">Industry Partners</span>
+</div>
+</div>
+</section>
+
+<section class="section event-details" id="details">
+<h2 class="section-title">What To Expect</h2>
+<p class="section-subtitle">An immersive three-day experience designed to elevate your professional journey</p>
+<div class="details-grid">
+<div class="detail-card">
+<i class="fa-solid fa-brain"></i>
+<h3>Keynote Sessions</h3>
+<p>Hear from industry titans and thought leaders sharing cutting-edge strategies, proven frameworks, and visionary insights that will reshape your perspective.</p>
+</div>
+<div class="detail-card">
+<i class="fa-solid fa-people-group"></i>
+<h3>Networking Opportunities</h3>
+<p>Build meaningful connections with peers, mentors, and industry leaders through curated networking sessions, cocktail hours, and collaborative workshops.</p>
+</div>
+<div class="detail-card">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>Hands-On Workshops</h3>
+<p>Participate in interactive sessions led by experts. Learn practical skills, tools, and methodologies you can implement immediately in your work.</p>
+</div>
+<div class="detail-card">
+<i class="fa-solid fa-award"></i>
+<h3>Awards & Recognition</h3>
+<p>Celebrate innovation and excellence as we honor outstanding achievements and breakthrough contributions that are shaping the future of our industry.</p>
+</div>
+<div class="detail-card">
+<i class="fa-solid fa-champagne-glasses"></i>
+<h3>Premium Catering</h3>
+<p>Enjoy gourmet meals, refreshments, and evening receptions featuring local and international cuisine with options for all dietary preferences.</p>
+</div>
+<div class="detail-card">
+<i class="fa-solid fa-gift"></i>
+<h3>Exclusive Swag</h3>
+<p>Take home premium branded merchandise, event materials, and exclusive resources worth over $500 to continue your learning journey.</p>
+</div>
+</div>
+</section>
+
+<section class="section agenda-section" id="agenda">
+<h2 class="section-title">Event Schedule</h2>
+<p class="section-subtitle">Three power-packed days of learning, networking, and growth</p>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-mug-hot"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 1 - March 15 | 8:00 AM
+</div>
+<h3 class="timeline-title">Registration & Welcome Breakfast</h3>
+<p class="timeline-desc">Check-in, receive your event materials, and enjoy a networking breakfast with fellow attendees. Set the tone for an incredible three days.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-rocket"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 1 | 10:00 AM
+</div>
+<h3 class="timeline-title">Opening Keynote: The Future is Now</h3>
+<p class="timeline-desc">Industry legend shares transformative insights on emerging trends, disruptive technologies, and strategies for staying ahead in a rapidly evolving landscape.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-users"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 1 | 2:00 PM
+</div>
+<h3 class="timeline-title">Breakout Sessions & Workshops</h3>
+<p class="timeline-desc">Choose from 15+ concurrent sessions covering leadership, innovation, technology, marketing, and personal development. Interactive and practical.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-wine-glass"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 1 | 6:00 PM
+</div>
+<h3 class="timeline-title">Evening Reception & Networking</h3>
+<p class="timeline-desc">Unwind with cocktails, live music, and meaningful conversations. Connect with speakers, sponsors, and fellow attendees in a relaxed atmosphere.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 2 - March 16 | 9:00 AM
+</div>
+<h3 class="timeline-title">Panel Discussions & Case Studies</h3>
+<p class="timeline-desc">Deep-dive into real-world success stories. Learn from companies that have achieved remarkable growth and transformation through innovation.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-lightbulb"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 2 | 2:00 PM
+</div>
+<h3 class="timeline-title">Innovation Showcase</h3>
+<p class="timeline-desc">Explore cutting-edge products, services, and solutions from leading companies. Get hands-on demos and discover game-changing technologies.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fa-solid fa-trophy"></i>
+</div>
+<div class="timeline-content">
+<div class="timeline-time">
+<i class="fa-regular fa-clock"></i> Day 3 - March 17 | 11:00 AM
+</div>
+<h3 class="timeline-title">Awards Ceremony & Closing Keynote</h3>
+<p class="timeline-desc">Celebrate excellence and innovation. Closing keynote provides actionable takeaways and inspiration to implement everything you've learned.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section speakers-section" id="speakers">
+<h2 class="section-title">Featured Speakers</h2>
+<p class="section-subtitle">Learn from the best minds in the industry</p>
+<div class="speakers-grid">
+<div class="speaker-card">
+<div class="speaker-img">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Speaker">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Sarah Johnson</h3>
+<p class="speaker-role">CEO, Tech Innovations Inc</p>
+<p class="speaker-bio">20+ years leading digital transformation initiatives for Fortune 500 companies. Named "Tech Leader of the Year" by Industry Magazine.</p>
+<div class="speaker-social">
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-solid fa-globe"></i></a>
+</div>
+</div>
+</div>
+
+<div class="speaker-card">
+<div class="speaker-img">
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Speaker">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Michael Chen</h3>
+<p class="speaker-role">Chief Innovation Officer, FutureCorp</p>
+<p class="speaker-bio">Pioneering AI and machine learning solutions. TEDx speaker and bestselling author of "Innovation Unleashed."</p>
+<div class="speaker-social">
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-solid fa-globe"></i></a>
+</div>
+</div>
+</div>
+
+<div class="speaker-card">
+<div class="speaker-img">
+<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400" alt="Speaker">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Emily Rodriguez</h3>
+<p class="speaker-role">Founder, StartupHub Global</p>
+<p class="speaker-bio">Serial entrepreneur who built and sold 3 successful startups. Now mentoring the next generation of founders worldwide.</p>
+<div class="speaker-social">
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-solid fa-globe"></i></a>
+</div>
+</div>
+</div>
+
+<div class="speaker-card">
+<div class="speaker-img">
+<img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400" alt="Speaker">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">David Park</h3>
+<p class="speaker-role">VP of Strategy, Global Ventures</p>
+<p class="speaker-bio">Strategic advisor to Fortune 100 companies. Expert in market expansion, growth hacking, and business model innovation.</p>
+<div class="speaker-social">
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-solid fa-globe"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section testimonials-section">
+<h2 class="section-title">What Attendees Say</h2>
+<p class="section-subtitle">Hear from past participants about their transformative experience</p>
+<div class="testimonials-slider">
+<div class="testimonial-card">
+<div class="testimonial-stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="testimonial-quote">"This event completely changed my perspective on what's possible. The connections I made here led to a partnership that grew my business by 300%. Best investment I've made in my career."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Attendee">
+</div>
+<div class="testimonial-info">
+<h4>James Wilson</h4>
+<p>Founder, GrowthLabs</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section pricing-section" id="pricing">
+<h2 class="section-title">Choose Your Pass</h2>
+<p class="section-subtitle">Select the package that best fits your goals</p>
+<div class="pricing-grid">
+<div class="pricing-card">
+<div class="pricing-name">Early Bird</div>
+<div class="pricing-price">$499<span>/person</span></div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Full 3-Day Access</li>
+<li><i class="fa-solid fa-check"></i> All Keynote Sessions</li>
+<li><i class="fa-solid fa-check"></i> Networking Events</li>
+<li><i class="fa-solid fa-check"></i> Event Materials</li>
+<li><i class="fa-solid fa-check"></i> Meals & Refreshments</li>
+<li><i class="fa-solid fa-xmark"></i> Workshop Access</li>
+<li><i class="fa-solid fa-xmark"></i> VIP Lounge</li>
+</ul>
+<a href="#rsvp" class="btn">Register Now</a>
+</div>
+
+<div class="pricing-card featured">
+<div class="pricing-name">Professional</div>
+<div class="pricing-price">$899<span>/person</span></div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Full 3-Day Access</li>
+<li><i class="fa-solid fa-check"></i> All Keynote Sessions</li>
+<li><i class="fa-solid fa-check"></i> Networking Events</li>
+<li><i class="fa-solid fa-check"></i> Premium Event Materials</li>
+<li><i class="fa-solid fa-check"></i> Gourmet Meals</li>
+<li><i class="fa-solid fa-check"></i> All Workshops</li>
+<li><i class="fa-solid fa-check"></i> Recording Access</li>
+<li><i class="fa-solid fa-xmark"></i> VIP Lounge</li>
+</ul>
+<a href="#rsvp" class="btn">Register Now</a>
+</div>
+
+<div class="pricing-card">
+<div class="pricing-name">VIP Experience</div>
+<div class="pricing-price">$1,499<span>/person</span></div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> All Professional Benefits</li>
+<li><i class="fa-solid fa-check"></i> VIP Lounge Access</li>
+<li><i class="fa-solid fa-check"></i> Private Speaker Meet & Greet</li>
+<li><i class="fa-solid fa-check"></i> Premium Seating</li>
+<li><i class="fa-solid fa-check"></i> Exclusive Dinner</li>
+<li><i class="fa-solid fa-check"></i> 1-on-1 Consulting Session</li>
+<li><i class="fa-solid fa-check"></i> Lifetime Recording Access</li>
+</ul>
+<a href="#rsvp" class="btn">Register Now</a>
+</div>
+</div>
+</section>
+
+<section class="section rsvp-section" id="rsvp">
+<h2 class="section-title">Reserve Your Spot Today</h2>
+<p class="section-subtitle">Limited seats available - secure your place now</p>
+<form class="rsvp-form" id="rsvpForm" onsubmit="handleRSVP(event)">
+<div class="form-row">
+<div class="form-group">
+<label for="firstName"><i class="fa-solid fa-user"></i> First Name *</label>
+<input type="text" id="firstName" required>
+</div>
+<div class="form-group">
+<label for="lastName"><i class="fa-solid fa-user"></i> Last Name *</label>
+<input type="text" id="lastName" required>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="email"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+<input type="email" id="email" required>
+</div>
+<div class="form-group">
+<label for="phone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+<input type="tel" id="phone" required>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="company"><i class="fa-solid fa-building"></i> Company/Organization</label>
+<input type="text" id="company">
+</div>
+<div class="form-group">
+<label for="jobTitle"><i class="fa-solid fa-briefcase"></i> Job Title</label>
+<input type="text" id="jobTitle">
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="ticketType"><i class="fa-solid fa-ticket"></i> Ticket Type *</label>
+<select id="ticketType" required>
+<option value="">Select Ticket Type</option>
+<option value="early-bird">Early Bird - $499</option>
+<option value="professional">Professional - $899</option>
+<option value="vip">VIP Experience - $1,499</option>
+</select>
+</div>
+<div class="form-group">
+<label for="attendees"><i class="fa-solid fa-users"></i> Number of Attendees *</label>
+<select id="attendees" required>
+<option value="">Select...</option>
+<option value="1">1 Person</option>
+<option value="2">2 People</option>
+<option value="3">3 People</option>
+<option value="4">4+ People</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="dietary"><i class="fa-solid fa-utensils"></i> Dietary Restrictions</label>
+<textarea id="dietary" rows="3" placeholder="Please list any dietary restrictions, allergies, or special requirements"></textarea>
+</div>
+<div class="form-group">
+<label for="expectations"><i class="fa-solid fa-message"></i> What are you hoping to gain from this event?</label>
+<textarea id="expectations" rows="3" placeholder="Share your goals and expectations"></textarea>
+</div>
+<button type="submit" class="btn"><i class="fa-solid fa-check-circle"></i> Confirm Registration</button>
+</form>
+</section>
+
+<section class="section sponsors">
+<h2 class="section-title">Our Sponsors & Partners</h2>
+<p class="section-subtitle">Proud to be supported by industry leaders</p>
+<div class="sponsors-grid">
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/667eea/ffffff?text=TechCorp" alt="TechCorp">
+</div>
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/764ba2/ffffff?text=InnovateLabs" alt="InnovateLabs">
+</div>
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/f093fb/ffffff?text=FutureVision" alt="FutureVision">
+</div>
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/4facfe/ffffff?text=GlobalTech" alt="GlobalTech">
+</div>
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/00f2fe/ffffff?text=DataSystems" alt="DataSystems">
+</div>
+<div class="sponsor-card">
+<img src="https://via.placeholder.com/180x70/43e97b/ffffff?text=CloudPro" alt="CloudPro">
+</div>
+</div>
+</section>
+
+<section class="section location-section">
+<h2 class="section-title">Event Location</h2>
+<p class="section-subtitle">Join us at the iconic Grand Convention Center</p>
+<div class="location-content">
+<div class="location-info">
+<h3><i class="fa-solid fa-location-dot"></i> Grand Convention Center</h3>
+<div class="location-details">
+<div class="location-item">
+<i class="fa-solid fa-map-marker-alt"></i>
+<div class="location-item-content">
+<h4>Address</h4>
+<p>123 Convention Boulevard, New York, NY 10001</p>
+</div>
+</div>
+<div class="location-item">
+<i class="fa-solid fa-car"></i>
+<div class="location-item-content">
+<h4>Parking</h4>
+<p>Complimentary parking available for all attendees. Over 500 spots in the underground garage with direct access to the event hall.</p>
+</div>
+</div>
+<div class="location-item">
+<i class="fa-solid fa-train"></i>
+<div class="location-item-content">
+<h4>Public Transportation</h4>
+<p>Conveniently located 5 minutes walk from Grand Central Station. Multiple subway lines and bus routes available.</p>
+</div>
+</div>
+<div class="location-item">
+<i class="fa-solid fa-hotel"></i>
+<div class="location-item-content">
+<h4>Accommodation</h4>
+<p>Discounted rates available at partner hotels within walking distance. Contact us for booking codes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="location-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6173703132!2d-73.97779368459395!3d40.75172097932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2s!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+</section>
+
+<section class="section faq-section">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<p class="section-subtitle">Everything you need to know about the event</p>
+<div class="faq-container">
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>What is included in my ticket?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+All tickets include access to keynote sessions, networking events, meals and refreshments, event materials, and swag bag. Professional and VIP tickets include additional workshops, recordings, and exclusive perks. Check the pricing section for detailed comparison.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>Can I get a refund if I can't attend?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+Full refunds are available up to 30 days before the event. After that, tickets can be transferred to another person or credited towards next year's event. Contact our support team for assistance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>Is there a dress code for the event?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+Business casual attire is recommended for daytime sessions. The evening reception is business formal. Comfortable shoes are suggested as you'll be moving between sessions throughout the venue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>Will the sessions be recorded?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+Professional and VIP ticket holders receive access to session recordings for 90 days after the event. Early Bird tickets do not include recording access, but it can be added for an additional fee.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>Are there networking opportunities?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+Absolutely! We've built in dedicated networking time throughout the event including coffee breaks, lunch sessions, evening receptions, and a mobile app to connect with other attendees before and during the event.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<span>What COVID-19 safety measures are in place?</span>
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+<div class="faq-answer">
+We follow all local health guidelines. The venue has enhanced air filtration, hand sanitizing stations throughout, and spacious layout allowing for comfortable distancing. We'll update attendees with current protocols closer to the event date.
+</div>
+</div>
+</div>
+</section>
+
+<section class="section quiz-section" id="apply">
+<h2 class="section-title">Apply for Scholarship Program</h2>
+<p class="section-subtitle">Limited scholarships available for qualifying applicants</p>
+<div class="quiz-container">
+<div class="progress-bar">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+<p class="progress-text" id="progressText">Question 1 of 5</p>
+<form id="quizForm" onsubmit="handleQuizSubmit(event)">
+<div class="quiz-question active" data-question="1">
+<h3>What best describes your current role?</h3>
+<p class="quiz-question-desc">This helps us understand your professional background</p>
+<div class="quiz-options">
+<label class="quiz-option">
+<input type="radio" name="q1" value="Executive/C-Level" required>
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-user-tie"></i> Executive/C-Level</div>
+<div class="quiz-option-desc">CEO, CFO, CTO, or other C-suite position</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q1" value="Manager/Director">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-users-gear"></i> Manager/Director</div>
+<div class="quiz-option-desc">Team lead, department head, or director</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q1" value="Individual Contributor">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-user"></i> Individual Contributor</div>
+<div class="quiz-option-desc">Specialist, analyst, or team member</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q1" value="Student/Academic">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-graduation-cap"></i> Student/Academic</div>
+<div class="quiz-option-desc">Student, researcher, or educator</div>
+</div>
+</label>
+</div>
+</div>
+
+<div class="quiz-question" data-question="2">
+<h3>What is your primary industry?</h3>
+<p class="quiz-question-desc">Select the industry you work in or study</p>
+<div class="quiz-options">
+<label class="quiz-option">
+<input type="radio" name="q2" value="Technology" required>
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-laptop-code"></i> Technology</div>
+<div class="quiz-option-desc">Software, hardware, IT services</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q2" value="Finance">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-chart-line"></i> Finance & Banking</div>
+<div class="quiz-option-desc">Banking, investment, fintech</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q2" value="Healthcare">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-heart-pulse"></i> Healthcare</div>
+<div class="quiz-option-desc">Medical, pharmaceutical, wellness</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q2" value="Other">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-ellipsis"></i> Other Industry</div>
+<div class="quiz-option-desc">Manufacturing, retail, education, etc.</div>
+</div>
+</label>
+</div>
+</div>
+
+<div class="quiz-question" data-question="3">
+<h3>What are you most interested in?</h3>
+<p class="quiz-question-desc">Help us tailor your event experience</p>
+<div class="quiz-options">
+<label class="quiz-option">
+<input type="radio" name="q3" value="Networking" required>
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-handshake"></i> Networking Opportunities</div>
+<div class="quiz-option-desc">Building professional connections</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q3" value="Learning">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-book-open"></i> Learning & Development</div>
+<div class="quiz-option-desc">Acquiring new skills and knowledge</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q3" value="Innovation">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-lightbulb"></i> Innovation & Trends</div>
+<div class="quiz-option-desc">Exploring cutting-edge ideas</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q3" value="All">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-check-double"></i> All of the Above</div>
+<div class="quiz-option-desc">Interested in everything</div>
+</div>
+</label>
+</div>
+</div>
+
+<div class="quiz-question" data-question="4">
+<h3>How did you hear about us?</h3>
+<p class="quiz-question-desc">Help us understand our reach</p>
+<div class="quiz-options">
+<label class="quiz-option">
+<input type="radio" name="q4" value="Social Media" required>
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-brands fa-instagram"></i> Social Media</div>
+<div class="quiz-option-desc">Facebook, LinkedIn, Twitter, Instagram</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q4" value="Email">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-envelope"></i> Email Newsletter</div>
+<div class="quiz-option-desc">Received promotional email</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q4" value="Referral">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-user-group"></i> Friend/Colleague Referral</div>
+<div class="quiz-option-desc">Someone recommended this event</div>
+</div>
+</label>
+<label class="quiz-option">
+<input type="radio" name="q4" value="Other">
+<div class="quiz-option-content">
+<div class="quiz-option-title"><i class="fa-solid fa-globe"></i> Other Source</div>
+<div class="quiz-option-desc">Search engine, blog, advertisement</div>
+</div>
+</label>
+</div>
+</div>
+
+<div class="quiz-question" data-question="5">
+<h3>Why do you deserve a scholarship?</h3>
+<p class="quiz-question-desc">Tell us your story in 200 words or less</p>
+<div class="quiz-options">
+<label class="quiz-option" style="display: block;">
+<textarea name="q5" rows="6" style="width: 100%; padding: 1rem; border: 2px solid #e8ecf5; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1rem;" placeholder="Share your story, goals, and why attending this event would be valuable for you..." required></textarea>
+</label>
+</div>
+</div>
+
+<div class="quiz-navigation">
+<button type="button" class="btn btn-secondary" id="prevBtn" onclick="navigateQuiz(-1)" style="display:none;"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+<button type="button" class="btn" id="nextBtn" onclick="navigateQuiz(1)">Next <i class="fa-solid fa-arrow-right"></i></button>
+<button type="submit" class="btn" id="submitBtn" style="display:none;"><i class="fa-solid fa-paper-plane"></i> Submit Application</button>
+</div>
+</form>
+</div>
+</section>
+
+<section class="newsletter-section">
+<div class="newsletter-content">
+<h3><i class="fa-solid fa-envelope-open-text"></i> Stay Updated</h3>
+<p>Subscribe to receive event updates, exclusive content, and early bird notifications</p>
+<form class="newsletter-form" onsubmit="handleNewsletter(event)">
+<input type="email" placeholder="Enter your email address" required>
+<button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+</form>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-section">
+<h3>EventPro 2025</h3>
+<p>Creating transformative experiences that shape the future of business and innovation.</p>
+<div class="footer-social">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul class="footer-links-list">
+<li><a href="#home">Home</a></li>
+<li><a href="#details">Event Details</a></li>
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#rsvp">RSVP</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Resources</h3>
+<ul class="footer-links-list">
+<li><a href="#">Past Events</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Press Kit</a></li>
+<li><a href="#">Sponsorship</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Contact</h3>
+<p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+<p><i class="fa-solid fa-envelope"></i> info@eventpro2025.com</p>
+<p><i class="fa-solid fa-location-dot"></i> 123 Event Street, NYC 10001</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2025 EventPro. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</footer>
+
+<div class="cta-floating">
+<a href="#rsvp" class="btn">
+<i class="fa-solid fa-ticket"></i>
+<span>Register Now</span>
+</a>
+</div>
+
+<div class="modal" id="successModal">
+<div class="modal-content">
+<span class="modal-close" onclick="closeModal()">&times;</span>
+<div class="success-icon">
+<i class="fa-solid fa-circle-check"></i>
+</div>
+<h2 id="modalTitle">Success!</h2>
+<p id="modalMessage">Your submission has been received.</p>
+<button class="btn" onclick="closeModal()"><i class="fa-solid fa-check"></i> Close</button>
+</div>
+</div>
+
+<script>
+let currentQuestion = 1;
+const totalQuestions = 5;
+const eventDate = new Date('2025-03-15T09:00:00').getTime();
+
+function toggleMenu() {
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.toggle('active');
+}
+
+function closeMenu() {
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.remove('active');
+}
+
+function updateCountdown() {
+const now = new Date().getTime();
+const distance = eventDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById('days').textContent = days.toString().padStart(2, '0');
+document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+if (distance < 0) {
+clearInterval(countdownInterval);
+document.querySelector('.countdown-section').innerHTML = '<h2>Event is Live!</h2>';
+}
+}
+
+const countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown();
+
+function handleRSVP(event) {
+event.preventDefault();
+const formData = {
+firstName: document.getElementById('firstName').value,
+lastName: document.getElementById('lastName').value,
+email: document.getElementById('email').value,
+phone: document.getElementById('phone').value,
+company: document.getElementById('company').value,
+jobTitle: document.getElementById('jobTitle').value,
+ticketType: document.getElementById('ticketType').value,
+attendees: document.getElementById('attendees').value,
+dietary: document.getElementById('dietary').value,
+expectations: document.getElementById('expectations').value,
+timestamp: new Date().toISOString()
+};
+
+const storageData = [];
+for (let i = 0; i < localStorage.length; i++) {
+const key = localStorage.key(i);
+if (key.startsWith('rsvp_')) {
+storageData.push(JSON.parse(localStorage.getItem(key)));
+}
+}
+storageData.push(formData);
+
+localStorage.setItem('rsvp_' + Date.now(), JSON.stringify(formData));
+
+showModal('Registration Confirmed!', `Thank you ${formData.firstName}! Your registration has been confirmed. A confirmation email will be sent to ${formData.email} with your ticket and event details.`);
+document.getElementById('rsvpForm').reset();
+}
+
+function handleNewsletter(event) {
+event.preventDefault();
+const email = event.target.querySelector('input[type="email"]').value;
+const data = { email: email, timestamp: new Date().toISOString() };
+localStorage.setItem('newsletter_' + Date.now(), JSON.stringify(data));
+showModal('Subscribed!', `You've been added to our mailing list at ${email}. Watch for updates and exclusive content!`);
+event.target.reset();
+}
+
+function navigateQuiz(direction) {
+const questions = document.querySelectorAll('.quiz-question');
+const currentQ = questions[currentQuestion - 1];
+const inputs = currentQ.querySelectorAll('input[type="radio"], textarea');
+const isAnswered = Array.from(inputs).some(input => {
+if (input.type === 'radio') return input.checked;
+if (input.tagName === 'TEXTAREA') return input.value.trim() !== '';
+return false;
+});
+
+if (direction === 1 && !isAnswered) {
+alert('Please answer the question before proceeding.');
+return;
+}
+
+questions[currentQuestion - 1].classList.remove('active');
+currentQuestion += direction;
+questions[currentQuestion - 1].classList.add('active');
+
+document.getElementById('prevBtn').style.display = currentQuestion === 1 ? 'none' : 'inline-block';
+document.getElementById('nextBtn').style.display = currentQuestion === totalQuestions ? 'none' : 'inline-block';
+document.getElementById('submitBtn').style.display = currentQuestion === totalQuestions ? 'inline-block' : 'none';
+
+const progress = (currentQuestion / totalQuestions) * 100;
+document.getElementById('progressFill').style.width = progress + '%';
+document.getElementById('progressText').textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+
+questions[currentQuestion - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function handleQuizSubmit(event) {
+event.preventDefault();
+const formData = new FormData(event.target);
+const data = {
+timestamp: new Date().toISOString(),
+responses: {}
+};
+
+for (let [key, value] of formData.entries()) {
+data.responses[key] = value;
+}
+
+localStorage.setItem('quiz_' + Date.now(), JSON.stringify(data));
+
+showModal('Application Submitted!', 'Thank you for applying! Our scholarship committee will review your application and respond within 2 weeks. Good luck!');
+event.target.reset();
+currentQuestion = 1;
+document.querySelectorAll('.quiz-question').forEach((q, i) => {
+q.classList.toggle('active', i === 0);
+});
+document.getElementById('prevBtn').style.display = 'none';
+document.getElementById('nextBtn').style.display = 'inline-block';
+document.getElementById('submitBtn').style.display = 'none';
+document.getElementById('progressFill').style.width = '20%';
+document.getElementById('progressText').textContent = 'Question 1 of 5';
+}
+
+function toggleFAQ(element) {
+const faqItem = element.parentElement;
+const wasActive = faqItem.classList.contains('active');
+document.querySelectorAll('.faq-item').forEach(item => {
+item.classList.remove('active');
+});
+if (!wasActive) {
+faqItem.classList.add('active');
+}
+}
+
+function showModal(title, message) {
+document.getElementById('modalTitle').textContent = title;
+document.getElementById('modalMessage').textContent = message;
+document.getElementById('successModal').classList.add('active');
+}
+
+function closeModal() {
+document.getElementById('successModal').classList.remove('active');
+}
+
+function exportData() {
+const rsvpData = [];
+const quizData = [];
+const newsletterData = [];
+for (let i = 0; i < localStorage.length; i++) {
+const key = localStorage.key(i);
+const value = JSON.parse(localStorage.getItem(key));
+if (key.startsWith('rsvp_')) {
+rsvpData.push(value);
+} else if (key.startsWith('quiz_')) {
+quizData.push(value);
+} else if (key.startsWith('newsletter_')) {
+newsletterData.push(value);
+}
+}
+console.log('RSVP Data:', rsvpData);
+console.log('Quiz/Application Data:', quizData);
+console.log('Newsletter Subscribers:', newsletterData);
+const exportObj = { rsvp: rsvpData, applications: quizData, newsletter: newsletterData };
+const dataStr = JSON.stringify(exportObj, null, 2);
+const dataBlob = new Blob([dataStr], { type: 'application/json' });
+const url = URL.createObjectURL(dataBlob);
+const link = document.createElement('a');
+link.href = url;
+link.download = 'event-data-export-' + new Date().toISOString().split('T')[0] + '.json';
+link.click();
+return exportObj;
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+closeMenu();
+}
+});
+});
+
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+if (window.scrollY > 100) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+});
+
+window.addEventListener('click', function(e) {
+if (e.target === document.getElementById('successModal')) {
+closeModal();
+}
+});
+</script>
+
+</body>
+</html>
